@@ -12,20 +12,51 @@
     </style>
 </head>
 <body>
-    <!-- 폼 태그 사용 -->
-    <form action="html5.html">
+    <!-- 테이블 태그(내용) 제어: 셀병합 
+    table, tr(table row줄), td(table data 칸)-->
+    <table>
+        <tr>
+            <td>순번</td>
+            <td>책이름</td>
+            <td>가격</td>
+            <td>판매량</td>
+            <td>판매액</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>7,000</td>
+            <td>1,000</td>
+            <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JS</td>
+            <td>7,000</td>
+            <td>1,000</td>
+            <td>7,000,000</td>
+        </tr>
+    </table>
+    <!-- 폼 태그 사용  엘리먼트: form 태그, input 태그-->
+    <!-- 액션-데이터자료전송(메서드:방법), radio(file), submit -->
+    <form action="htrp://naver.com" method="GET">
         <input type="text" name="" id="">
-    <input type="password" name="password" id="">
-    <input type="date" name="date" id="">
-    <input type="color" name="color" id="">
-    <input type="radio" name="radio" id="">
-    <input type="radio" name="radio" id="">
-    <input type="checkbox" name="checkbox" id="">
-    <input type="checkbox" name="checkbox" id="">
-    <input type="file" name="file" id="">
-    <input type="file" name="file" id="">
-    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
-    \</form>
+        <input type="password" name="password" id="">
+        <input type="date" name="date" id="">
+        <input type="color" name="color" id="">
+        <input type="radio" name="radio" id="">
+        <input type="radio" name="radio" id="">
+        <!-- 라디오 버튼은 2개 이상중 1개만 선택, name이 같음 -->
+        <input type="checkbox" name="checkbox" id="">
+        <input type="checkbox" name="checkbox" id="">
+        <!-- 체크박스는 2개 이상중에 2개이상 선택가능,name이 틀림 -->
+        <input type="file" name="file" id="">
+        <input type="file" name="file" id="">
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="버튼">
+        <input type="submit" value="서밋">
+        <input type="submit" value="서밋">
+    </form>
     <!-- 유투브 영상 집어넣기 iframe -->
     <iframe width=100% height="300"src="http://www.human.or.kr/" frameborder="0"></iframe>
     <iframe width="100%" height="300" src="https://www.youtube.com/embed/DQSrC_b7cq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
