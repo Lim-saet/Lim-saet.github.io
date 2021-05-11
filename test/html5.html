@@ -9,33 +9,90 @@
         table, tr, th, td {
             border: 1px solid black;
             font-size: 13px;}
+            /* style의 주석 Ctrl+/ 조합 */
+            /* 테이블태그의 테두리 이중선을 1개선으로 병합 */
+            table {
+                border-collapse: collapse;
+            }
+           
     </style>
 </head>
 <body>
+    <!-- HTML5 레이아웃 구조에 사용된 태그 
+    header, nav, section, article, aside, footer
+    -->
+    <style>
+        /* css: cascade style sheet  계층형 스타일 표*/
+        header, nav, section, article, aside, footer{
+                border:1px dotted black;
+        header > h1, footer > h1 {text-align: center; }
+        nav { display: block; height: 60px; }
+        nav > ul > li {
+            float:left; margin-right:20px;
+        }
+        div#contents { vertical-align: middle; }
+        div.contents { 
+            /* 내부의 컨텐츠 기준되는 외부요소에 관계형 포지션 추가  */
+            position: relative;
+        }
+        section{ width:50%; display: inline-block; }
+        aside { width: 40%; display: inline-block;
+        height: 100%;
+        position:absolute;
+        }
+    </style>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+        </ul>
+    </nav>
+    <div id="contents">
+    <section>
+        <h1>section</h1>
+        <article>
+            <h1>article</h1>
+        </article>
+    </section>
+    <aside>
+        <h1>aside</h1>
+    </aside>
+    <footer>
+        <h1>footer</h1>
+    </div>
+    </footer>
     <!-- 테이블 태그(내용) 제어: 셀병합 
     table, tr(table row줄), td(table data 칸)-->
     <table>
         <tr>
-            <td>순번</td>
-            <td>책이름</td>
-            <td>가격</td>
-            <td>판매량</td>
-            <td>판매액</td>
+            <th>순번</th>
+            <th>책이름</th>
+            <th>가격</th>
+            <th>판매량</th>
+            <th>판매액</th>
         </tr>
         <tr>
             <td>1</td>
             <td>HTML</td>
             <td>7,000</td>
-            <td>1,000</td>
+            <td rowspan="2">1,000</td>
+            <!-- rowspan 세로칸을 병합 -->
             <td>7,000,000</td>
         </tr>
         <tr>
             <td>2</td>
             <td>JS</td>
             <td>7,000</td>
-            <td>1,000</td>
+            <!-- <td>1,000</td> -->
             <td>7,000,000</td>
-        </tr>
+        </tr> 
+             <td colspan="4">합계</td>
+             <!-- colspan 가로칸 병합 -->
+             <td>14,000,000</td>
     </table>
     <!-- 폼 태그 사용  엘리먼트: form 태그, input 태그-->
     <!-- 액션-데이터자료전송(메서드:방법), radio(file), submit -->
