@@ -27,6 +27,85 @@
    </table> 
    <div id="one">헬로 자바스크립트</div>
    <script>
+       // 변수의 영역(scope)
+       // function 스코프변수 예약어 var, 블럭scope변수예약어 let,const
+       var i = 10;
+       var i2 = 0;
+       if(i>5) {
+           let i2 = 100;
+       }else{
+           let i2 = 200;// let 변수는 {블럭}영역 안쪽에서만 효력이 있음
+       }
+       function test(params) {
+           var i2 = 200; //var 사용하면 변수 재정의된 변수 밖으로 못나감
+       }
+       test(1);
+       document.write(i2);
+       document.write('<hr>');
+       var arrays = [10, 20, 30, 40, 50];
+       // 반복문2: while 문은 for문보다는 조금 사용, 잘못하면 무한반복되기때문
+       //while문은 주로 IOT에서 많이 사용, 온도센서값 입력할때 무한반복 되기 때문
+       var i=0;
+       while (i < arrays.length) {
+            document.write(arrays[i]);
+            document.write('<br>');
+            i = i + 1;// i++
+        }
+       document.write('<hr>');
+       // 반복문1: for문 ~하는 동안 반복해라.
+       var arrays = [10, 20, 30, 40, 50]
+       //for (시작값; 종료값; 증가값) {}
+       for(var i=arrays.length-1; i>=0; i--){ //내림차순 출력
+        //for(var i=0; i<arrays.length; i++){ //오름차순 출력}
+           document.write(arrays[i]);
+           document.write('<br>');
+       }
+       // 조건문: 비교
+       if (1>3) {
+           document.write('if문 시작');
+       }  else if(2 == 3) {
+          document.write('else if 첫번째');
+       } else if('a' == 'a') {
+           document.write('else if 두번째');
+       } else {
+            document.write('else 문')
+       }
+       document.write('<br>');
+       // 선택문: Switch case 스위치 케이스문
+       var key = 3;
+       switch (key) {
+           case 1:
+               document.write(key,'를 선택했습니다.');
+               break;//switch문 빠져나갑니다.(중지)
+            case 2: 
+            document.write(key,'를 선택했습니다.');
+            break;
+            case 3:
+                 document.write(key,'를 선택했습니다.');
+                break;
+            default:
+                document.write('선택된 키가 없습니다.');
+                break;
+       }
+       // 인터넷 자료교환 대량 데이터형식: xml 태그 방식
+       // 현재는 json(JavaScript Object Notation) 자바스크립트 객체 표시
+       var human = {
+           name:{
+               firstname:'임',
+               lastname:'샛별'
+           },               // object(배열)
+           age:10,         //number
+           married:true    //boolean}
+        }
+        document.write(typeof(human));
+        document.write('<br>');
+        document.write(human['name']);
+        document.write('<br>');
+        document.write(human['name']['lastname']);
+        document.write('<br>');
+        document.write(human['age']);//값을 파싱할때, 키로 값을 뽑아냅니다.
+        document.write('<hr>');
+       //ㄴ제이슨데이터는 복잡해보이지만, keyvalue ( 고유키 : 값 )
        // 사용자 데이터형: object(array)
        // 참고: 기본형데어터 - number, string, boolean
        var arrays = [10, 20, 30, 40]
@@ -39,10 +118,12 @@
        document.write(arrays);//pop 이전 배열값
        document.write('<br>');
        document.write(arrays.pop());//array에서 자료를 출력 내용삭제/ 자바에서 안쓰임
+       //pop은 제일 마지막에 입력된, index가 제일 마지막인 값이 출력
        document.write('<br>');
        document.write(arrays);//pop 이후의 배열값
        document.write('<br>');
        document.write(arrays.push(1000));//arrays에 자료 입력
+       //push 인덱스값이 제일 마지막인 자료 다음에 입력이 된다
        document.write('<br>');
        document.write(arrays);
        document.write('<br>');
@@ -50,6 +131,7 @@
        document.write('<br>');
        document.write(arrays);
        document.write('<br>');
+       document.write(arrays.reverse());//sort는 오름차순1,2,3 정렬, reverse는 내림차순3,2,1 정렬 
        document.write('<br>');
        // 날짜 처리 함수
        var date = new Date;// new 키워드(예약어)로 함수형변수 생성
