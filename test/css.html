@@ -21,9 +21,10 @@
        가상요소(Element-태그): :hover 사용예- a:hover
        */
        h1 { background-color: skyblue;}
-    div * {
+     div 
+     /* {
            color: green;
-       }
+       } */
        .box-one,.box-two { background-color: tomato; }
        #box-four, #box-five { background-color: yellow; }
        .box-one p:after { content:   '      +adddddd';}
@@ -42,11 +43,40 @@
        }
        /* 웹브라우저 기본 폰트크기는 16px = 1em */
        /* 위에서부터 해석하는 방식은 인터프러터형=자바스크립틀 인터프러터형 언어 */
+       .box-one {
+           width: 200px;
+           height: 200px;
+           background-color: green;
+           padding: 20px; /* 안쪽여백 */
+           /* 바깥 여백 : 4가지 방향 12시부터 시계방향으로 이동 가능 */
+           margin: 44px 30px 55px 80px;  
+           /* 바깥여백: 2가지 방향 상하좌우 */
+           margin: 30px 60px; /* 30상하 60좌우 */
+           box-sizing: border-box;
+           border: 10px solid black;
+           /* 가로 가운데 정렬하는 방법 */
+           margin: 0px;
+           margin: 0px auto;/* 0 상하, auto 좌우 */  
+           margin: 0px;
+           position: fixed; /* 자리가 다른 태그와 관련없이 위치를 가짐 */  
+                 /*absolute 절대위치 fixed 고정위치  */
+           margin-top: 20px;
+           margin-left: 20px;  
+       }
+        .box-two {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-sizing: border-box; 
+            /* 박스사이징 필수 */
+        }
+       }
     </style>
 </head>
 <body>
     <h1>헬로 CSS</h1>
-    <div class="box-one"><p>one</p></div>
+    <div class="box-one"><p style="color: white;">
+    <a herf="#">상단으로 이동</a></p></div>
     <div class="box-two"><a href="">two two two</a></div>
     <div class="box-three">three</div>
     <div id="box-four">four</div>
@@ -64,7 +94,8 @@
         경로(Path: 상대경로, 절대경로)
         Casscade Style Sheet 계층현 스타일 표 
         01 css 적용하는 3가지 방법 확인, 내부css, 외부css, 인라인css --> 
-        <p><span style="color: tomato">Lorem ipsum</span> ipsum dolor, sit amet consectetur adipisicing elit. Ratione blanditiis, reprehenderit cupiditate exercitationem ab perferendis repellendus, suscipit ullam, asperiores assumenda dicta nobis obcaecati sed explicabo dolorem tenetur alias ipsum commodi?</p>
+        <p><span style="color: tomato">Lorem ipsum</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem molestiae, quasi architecto, eos amet iure laborum deserunt voluptatibus veniam accusantium doloribus velit reprehenderit rerum enim consequuntur eum nobis porro eius modi accusamus saepe, beatae molestias cumque? Atque, reiciendis cum! Corrupti odit rerum exercitationem, inventore at dolorem aspernatur iusto eveniet assumenda repellat fugiat praesentium, adipisci commodi. Eligendi eveniet molestias architecto aut aliquam esse animi nostrum nemo inventore quisquam totam, ducimus tempora suscipit temporibus quasi dolore atque repellat! Ex perferendis iste perspiciatis ducimus distinctio et sunt sit suscipit. Dolores dolorem accusantium minima ea, laboriosam maiores voluptate eos! Sit porro ipsam esse totam vel atque quod qui a, cumque nihil quae voluptas delectus laborum tempore, doloremque sint nobis accusamus vitae quas eum distinctio!</p>
+        <p><span style="color: tomato">Lorem ipsum</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem molestiae, quasi architecto, eos amet iure laborum deserunt voluptatibus veniam accusantium doloribus velit reprehenderit rerum enim consequuntur eum nobis porro eius modi accusamus saepe, beatae molestias cumque? Atque, reiciendis cum! Corrupti odit rerum exercitationem, inventore at dolorem aspernatur iusto eveniet assumenda repellat fugiat praesentium, adipisci commodi. Eligendi eveniet molestias architecto aut aliquam esse animi nostrum nemo inventore quisquam totam, ducimus tempora suscipit temporibus quasi dolore atque repellat! Ex perferendis iste perspiciatis ducimus distinctio et sunt sit suscipit. Dolores dolorem accusantium minima ea, laboriosam maiores voluptate eos! Sit porro ipsam esse totam vel atque quod qui a, cumque nihil quae voluptas delectus laborum tempore, doloremque sint nobis accusamus vitae quas eum distinctio!</p>
      
 </body>
 </html>
