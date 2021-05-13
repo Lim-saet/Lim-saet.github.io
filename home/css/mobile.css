@@ -32,6 +32,10 @@ a:visited {
 a {
   text-decoration: none;
 } /* 링크의 밑줄이 사라짐 */
+
+/* //공통영역 */
+
+/* 부트스트랩 css 스타일 수정 */
 /* 클래스 선택자 */
 .clear::after {
   content: "";
@@ -49,7 +53,8 @@ a {
   /* 너비크기가 100% */
   width: 100% !important;
 }
-/* //공통영역 */
+/* //부트스트랩 cdd 스타일 수정 */
+
 /* 헤더영역 */
 .on {
   /* .은 클래스 선택자 */
@@ -73,3 +78,24 @@ header {
   margin: 0 auto;
 }
 /* //헤더영역 */
+
+/* 로고영역 */
+.header_area h1 {
+  float: none;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 3px 0 0; /* 3px 상하 0ox 좌 0px 우*/
+}
+.header_area h1 a {
+  /* 로고는 이미지인데 글을 더한 이유는 웹 접근성 때문에 추가(스크린리더: 사각장애인용 유틸리티) */
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  background: url(../img/logo.jpg) no-repeat; /* css3는 함수를 지원함 / no-repeat 사진 반복 중단*/
+  background-size: 50px 60px !important; /*백그라운드 이미지 사이즈 가로 50px, 세로 60px */
+  background-position: center center !important; /* 이미지 위치가 가로 가운데, 세로 가운데 */
+  text-indent: -9999px; /* 들여쓰기 이미지만 보이고, 글자는 숨기기 위해서*/
+  overflow: hidden;
+}
+/* //로고영역 */

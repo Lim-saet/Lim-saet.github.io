@@ -21,25 +21,45 @@
     <style>
       /* 모바일용 메인페이지 스타일 지정 */
       /* 내부 css에서 작업하고 밖으로 뺀다 */
-      /* 로고영역 */
-      .header_area h1 {
-        float: none;
-        width: 100%;
-        height: 50px;
-        text-align: center;
-        padding: 3px 0 0; /* 3px 상하 0ox 좌 0px 우*/
+      /* 상단메뉴영역 */
+      .openMOgnb {
+        /* gnb: global navigation bar 약자 메뉴명칭으로 사용 */
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 35px;
+        width: 25px;
+        height: 16;
       }
-      .header_area h1 a {
-        /* 로고는 이미지인데 글을 더한 이유는 웹 접근성 때문에 추가(스크린리더: 사각장애인용 유틸리티) */
-        display: inline-block;
-        width: 150px;
-        height: 80px;
-        background: url(./img/logo.jpg); /* css3는 함수를 지원함 */
-        background-size: 50px 60px !important; /*백그라운드 이미지 사이즈 가로 50px, 세로 60px */
-        background-position: center center !important; /* 이미지 위치가 가로 가운데, 세로 가운데 */
-        text-indent: -9999px; /* 들여쓰기 이미지만 보이고, 글자는 숨기기 위해서*/
+      .hdd {
+        text-indent: -9999px;
+        position: absolute;
       }
-      /* //로고영역 */
+      .openMOgnb span {
+        box-sizing: border-box; /* box 크기를 테두리까지(border) 크기로 고정*/
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        background: #fff;
+      }
+      .openMOgnb span + span {
+        width: 17px;
+      }
+      .openMOgnb span:first-of-type + span {
+        width: 17px;
+      } /* + 형제 인접연산자 */
+      .openMOgnb span:last-child {
+        /* last child는 마지막 span을 가리킴*/
+        width: 25px;
+        margin-bottom: 0px;
+      }
+      .header_cont {
+      }
+
+      /* ㄴ + 는 같은계층의 span을 가리킴 */
+      /* //상단메뉴영역 */
     </style>
     <script>
       $(document).ready(function () {});
