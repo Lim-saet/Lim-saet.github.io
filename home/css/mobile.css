@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+/* 공통영역 */
+body {
+  /* body안의 a태그엔 적용이 안됌 */
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px !important; /* important(중요함)는 body의 폰트크기는 무조건 16px로 고정 */
+  letter-spacing: -1px !important; /* 글자 사이 간격 */
+  color: #444 !important;
+  word-wrap: break-word !important; /* 워드랩,줄바꿈할떄 책
+    가방(x) 단어가 1개의 단위로 줄바꿈이 실행됌->단어가 분리가 안됌 */
+  line-height: 1 !important; /* 문장간격 / 단위가 1이면 16px 이다 */
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+#container a:hover {
+  color: #000 !important;
+}
+/* : 가상선택자, :: 가상요소 */
+a:link {
+  color: #444;
+}
+a:hover {
+  color: #fff !important;
+}
+a:visited {
+  color: #444;
+}
+a {
+  text-decoration: none;
+} /* 링크의 밑줄이 사라짐 */
+/* 클래스 선택자 */
+.clear::after {
+  content: "";
+  clear: both; /* 태그의 위치를 지정하는 float:left|right 속성을 초기화 시킴 */
+  display: block; /* float는 블럭 속성이 없어진것을 clear 시키면, 다시 블럭속성을 부여*/
+}
+.txt_right {
+  text-align: right !important;
+}
+.mt20 {
+  /* mt 네이밍은 부트스트랩과 동일 */
+  margin-top: 20px !important;
+}
+.w100p {
+  /* 너비크기가 100% */
+  width: 100% !important;
+}
+/* //공통영역 */
+/* 헤더영역 */
+.on {
+  /* .은 클래스 선택자 */
+  background: #32353d;
+}
+header {
+  /* 태그 선택자 */
+  height: 90px;
+  text-align: center;
+  z-index: 200; /* z-index z순서: x(가로축),y(세로축),z(위쪽) */
+  /* 빨간색 z-index:0은 제일 아래, 녹색 z-index:1, 값이 높을수록 상단으로 배치 */
+  /* z-index를 200으로 주는 이유는 슬라이드 이미지와 겹칠때 메뉴는 항상 위에 있어야하기 때문에 메뉴가 다른 태그에 가려지는 것을 방지 */
+  background: rgba(0, 0, 0, 0.5); /* alpha 약자: 투명도 크기  1:100% 0.5:50%*/
+  position: absolute; /*relative 다른태그와 관계(기본값), 위치에서 다른태그에 영향을 받지않음*/
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.boxinner {
+  width: 100%;
+  margin: 0 auto;
+}
+/* //헤더영역 */

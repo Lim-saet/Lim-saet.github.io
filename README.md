@@ -7,6 +7,10 @@
 
 #### 20210513(목) 작업내역
 
+- 픽사베이 이미지 3개: 로고 1개, 슬라이드 이미지 1개 , Noimage 1개 받고 경로 적어놓기
+- 로고 : https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC-%EC%82%AC%EC%8A%AC-%EB%8F%99%EB%AC%BC-323262/
+- 슬라이드 : https://pixabay.com/ko/photos/%ED%95%98%EC%9D%B4%ED%82%B9-%EA%B0%9C-%EC%9E%90%EC%97%B0-%ED%92%8D%EA%B2%BD-%EB%8F%99%EB%AC%BC-4591419/
+- Noimage : https://pixabay.com/ko/vectors/%ED%81%AC%EB%A1%9C%EC%8A%A4-%EC%82%AD%EC%A0%9C-%EC%A0%9C%EA%B1%B0-%EC%B7%A8%EC%86%8C-296507/
 - 작업폴더를 나누는 이유: 시청(관공서), 대학, 기업의 웹프로그램(사이트) 제작 할때, 1년간 무상 유지보수 이후 2천, 리뉴얼 4천 비용이 책정
 - home폴더 기존작업물, 리뉴얼 home에 덮어쓰는 방식이 아니고,
 - 리뉴얼 할때 home2022 폴더에 작업을 하게 됌
