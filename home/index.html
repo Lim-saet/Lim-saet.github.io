@@ -19,107 +19,187 @@
     <link rel="stylesheet" href="/home/css/reset.css" />
     <link rel="stylesheet" href="/home/css/mobile.css" />
     <style>
-      /* 모바일용 메인페이지 스타일 지정 */
-      /* 내부 css에서 작업하고 밖으로 뺀다 */
-      /* 본문 컨테이너 영역 */
-      /* 수정필요 틀린거 있는지 확인해야함 */
-      #container,
-      footer,
-      .hdd,
-      .quick_area {
-        text-align: center;
-      }
-      #container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 30px;
-      }
-      /* 슬라이드 영역 */
-      .main.rolling_pc {
-        display: block;
-      }
-      .visualRoll {
-        position: relative;
-        width: 100%;
-      }
-      .viewImglist {
-        position: relative;
-        width: 100%;
-      }
-      un.viewImglist li {
-        /* ul.클래스명- ul태그등 클래스 명이 viewImgList 영역 */
-        text-align: center;
-        height: 300px;
-        line-height: 550px;
-        background-size: cover; /* 배경 이미지의 크기를 꽉 채우는 값 cover */
-        width: 100%;
-      }
-      .roll_content a img {
-        display: none;
-      }
-      li.imglist0 {
-        position: relative;
-        z-index: 50;
-        background: url(./img/slide\ 1.jpg) no-repeat;
-      } /*슬라이드 안나옴 tlqkrj*/
-      li.imglist1 {
-        position: absolute;
-        z-index: 10;
-        left: 0;
-        top: 0;
-        background: url(./img/slide\ 1.jpg) no-repeat;
-      }
-      li.imglist2 {
-        position: absolute;
-        z-index: 10;
-        left: 0;
-        top: 0;
-        background: url(./img/slide\ 1.jpg) no-repeat;
-      }
-      .roll_content {
-        position: static;
-      }
-      .roll_content .roll txtline {
-        position: absolute;
-        left: 0;
-        bottom: 60px; /* roll_content 하단에서 60px 위에 위치 */
-        width: 100%;
-        line-height: 1;
-        text-align: center;
-        font-size: 22px;
-        color: #fff;
-        letter-spacing: 2px;
-      }
-      .rollbtnArea {
-        position: absolute; /* 위치를 기준위치에서 고정시켜놓겠다 */
-        width: 100%;
-        left: 0;
-        bottom: 25px;
-        z-index: 200;
-      }
-      .rollingbtn {
-        width: 320px;
-        margin: 0 auto; /* 버튼영여게 5개 들어가고, 가운데 정렬 시킴 */
-        text-align: center;
-      }
-      .rollingbtn li.butt0 {
-        margin-left: 10px;
-      }
-      .rollingbtn li {
-        display: inline-block;
-        margin-left: 5px;
-      }
-      .rollingbtn li a {
-        vertical-align: top; /*img하고 다른태그 사용시 다른태그와 세로 정렬*/
-      }
-      /* //슬라이드 영역 */
-      /*갤러리 최근게시물 영역 */
-      .about_area h2 {
-        font-size: 20px;
-        padding: 27px 0px 25px; /* 27상하, 0좌, 25우*/
-      }
-      /* //갤러리 최근 게시물 영역 */
-      /* //본문 컨테이너 영역 */
+         /* 모바일용 메인페이지 스타일 지정 */
+         /* 내부 css에서 작업하고 밖으로 뺀다 */
+         /* 본문 컨테이너 영역 */
+         /* 수정필요 틀린거 있는지 확인해야함 */
+         #container,
+         footer,
+         .hdd,
+         .quick_area {
+           text-align: center;
+         }
+         #container {
+           position: relative;
+           width: 100%;
+           padding-bottom: 30px;
+         }
+         /* 슬라이드 영역 */
+         .main.rolling_pc {
+           display: block;
+         }
+         .visualRoll {
+           position: relative;
+           width: 100%;
+         }
+         .viewImglist {
+           position: relative;
+           width: 100%;
+         }
+         un.viewImglist li {
+           /* ul.클래스명- ul태그등 클래스 명이 viewImgList 영역 */
+           text-align: center;
+           height: 300px;
+           line-height: 550px;
+           background-size: cover; /* 배경 이미지의 크기를 꽉 채우는 값 cover */
+           width: 100%;
+         }
+         .util {
+           padding: 20px;
+         }
+         .header_cont a {
+           color: #fff;
+           font-size: 16px;
+         }
+         .roll_content a img {
+           display: none;
+         }
+         .util li {float: left;}
+         .util li::after {
+      /* ::가상요소를 추가 */
+       content: '|';
+       display: inline-block;
+       padding: 0 10px;
+       color: #a2a2a3;
+       font-size: 10px;
+         li.imglist0 {
+           position: relative;
+           z-index: 50;
+           background: url(./img/slide1.jpg) no-repeat;
+         } /*슬라이드 안나옴 tlqkrj*/
+         /* 머가 존나 이상한데??? */
+         li.imglist1 {
+           position: absolute;
+           z-index: 10;
+           left: 0;
+           top: 0;
+           background: url(./img/slide1.jpg) no-repeat;
+         }
+         li.imglist2 {
+           position: absolute;
+           z-index: 10;
+           left: 0;
+           top: 0;
+           background: url(./img/slide1.jpg) no-repeat;
+         }
+         .roll_content {
+           position: static;
+         }
+         .roll_content .roll txtline {
+           position: absolute;
+           left: 0;
+           bottom: 60px; /* roll_content 하단에서 60px 위에 위치 */
+           width: 100%;
+           line-height: 1;
+           text-align: center;
+           font-size: 22px;
+           color: #fff;
+           letter-spacing: 2px;
+         }
+         .rollbtnArea {
+           position: absolute; /* 위치를 기준위치에서 고정시켜놓겠다 */
+           width: 100%;
+           left: 0;
+           bottom: 25px;
+           z-index: 200;
+         }
+         .rollingbtn {
+           width: 320px;
+           margin: 0 auto; /* 버튼영여게 5개 들어가고, 가운데 정렬 시킴 */
+           text-align: center;
+         }
+         .rollingbtn li.butt0 {
+           margin-left: 10px;
+         }
+         .rollingbtn li {
+           display: inline-block;
+           margin-left: 5px;
+         }
+         .rollingbtn li a {
+           vertical-align: top; /*img하고 다른태그 사용시 다른태그와 세로 정렬*/
+         }
+         /* //슬라이드 영역 */
+         /*갤러리 최근게시물 영역 */
+         .about_area h2 {
+           font-size: 20px;
+           padding: 27px 0px 25px; /* 27상하, 0좌, 25우*/
+         }
+         .about_area h2 b {
+             display: block; /* 1개의 라인 영역 모두 차지 */
+             padding-top:  10px;
+         }
+
+         /* 하나도 적용되지않음 ;;;  */
+
+
+         .about_box {background: #fff;}
+         .place_list{
+             float: none;
+             width: 100%;
+             margin: 0;
+             box-sizing: border-box;
+             padding: 0 20px;
+         }
+         ,.place_list li img {/* 이미지가 같이 확대*/
+           width: 100%;/* 가로크기를 반응형으로 만드는 방법 ~%로 표시 꼭 100%일 필요는 없음*/
+         }
+         .place_list li h3{
+             font-weight: bold;
+             font-size: 18px;
+             padding-top: 25px;
+         }
+         .place_list p.txt {
+             padding: 10px 50px 30px;
+             line-height: 1.4;
+             box-sizing: border-box;
+             width: 100%;
+             overflow: hidden;
+             word-break: keep-all;
+             color: #666;
+         }
+         .place_list li .view{
+             padding-bottom: 10px;
+             margin: 0px 0px 30px;
+            display: inline-block;
+            padding-top: 5px;
+            border-top: 2px solid #333;
+            color: #666;
+            }
+         /* //갤러리 최근 게시물 영역 */
+         /* 공지사항 최근 게시물 영역 */
+            .app line {display: none;} /*태블릿,pc 전용 콘텐츠*/
+            .appbbs_area{
+                padding: 0 20px;
+                text-align: left;
+            }
+            .bbs_line{
+                float: none;
+                width: 100%;
+                padding: 20px 0px;
+                border-top: 1px solid #d6d7d8;
+            }
+            .bbs line h3 {
+                font-weight: bold;
+                font-size: 19px;
+            }
+            .bbs_line /notice_recent{
+                padding-top: 10px;
+            }
+            .bbs_line .notice_recent li{
+                padding: 8px 0px;
+            }
+         /* // 공지사항 최근 게시물 영역 */
+         /* //본문 컨테이너 영역 */
     </style>
     <script>
       $(document).ready(function () {});
