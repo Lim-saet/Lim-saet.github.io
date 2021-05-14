@@ -5,7 +5,7 @@
 - RestrAPI 서버주소(빅데이터) : http://corona.me/getdata
 
 #### 20210514 금 작업예정
-
+- 검사기준: CSS3 , HTML5
 - 사용자당 모바일 메인페이지 footer 영역 CSS 입히기
 - 과제 제출 준비
 - 메인페이지에 자바스크립트(jQuery)적용- 메뉴,슬라이드이미지 처리, top 상단이동 
