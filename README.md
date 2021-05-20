@@ -1,6 +1,14 @@
+#### 20210521 금 작업예정
+- 반응형모바일 게시판페이지(CRUD) CSS 처리: Create(Update) = board_write.html
+- 반응형 서브페이지들(로그인, 회원가입, 마이페이지)처리할 예정
+- 이클립스 헬로월드 실습
+
 #### 20210520 목 작업
 - 메인페이지 시간이 걸리는 부분(프론트엔드): 메뉴처리, 슬라이딩 처리ㅇㅋ
-- 모바일 게시판페이지(CRUD) CSS 처리 ing
+- 모바일 게시판페이지(CRUD) CSS 처리: Read(list, view 페이지) ㅇㅋ
+- Read -리스트형식(다중Map): board_list.html 
+- Read: 단일 Map형식,json형식(key1:value1,key2:value2.key3:value3...): board_view.html      (회원상세보기)
+- 상세보기 페이지 댓글 디자인은 부트스트랩 디자인시(관리자단 작업시) 추가할 예정
 - 카멜표기법(낙타등표기법 예: .bbsListTble),_표기법(예, .bbs_title)
 - href(헤르프): hypertext reference (웹문서 참조)
 - 정적(static)콘텐츠: html,css,js
@@ -35,7 +43,11 @@
 - OPEN JDK 8JDK(egov와 100%호환됌)
 - 톰캣- 이클립스에서 웹프로그램 결과를 확인하는 라이브 서버입니다.(localhost:8080) 
 - 라이브서버(아파치): VS code에서 HTML 결과를 확인하는 라이브 서버(localhost: 5500)
-
+- JRE(Java Runtime Envirionment): 자바앱을 실행할떄만 사용 
+- JDK 설치: 개발하고 실행할때
+- 점심후 웹프로젝트 1개(헬로월드)-생성 play후 지우고(버리고 나머지는 2달 후까지 계속 가져갑니다)
+- 스프링프로젝트1개(헬로자바)-test 폴더에서 자바기초를 실습
+- 자바에 익숙해진 후 위 스프링프로젝트를 이용해서 스프링 웹프로젝트 진행
 
 #### 20210518(화) 작업예정
 - 테블릿 메인 CSS 스타일 처리, PC용 메인 CSS 스타일처리
