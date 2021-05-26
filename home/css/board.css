@@ -145,6 +145,7 @@ ul.page_menu li a {
     }
     .btn_line {
         padding: 20px 0px;
+        text-align: center;
     }
     .btn_line a:first-child { /* 버튼이 여러개 있을때 적용 */
         margin-left: 0px;
@@ -311,9 +312,13 @@ ul.page_menu li a {
 	border: 1px solid #ccc;
 	margin-left: 1px;
 }
+.radio_area {
+    padding: 10px;
+    box-sizing: border-box;
+}
 .app_content input {
 	border: none;
-	width: inherit; /*부모영역의 input태그의 너비값을 상속받음=width값을 초기화하세요*/
+	/* width: inherit; 부모영역의 input태그의 너비값을 상속받음=width값을 초기화하세요 */
     box-sizing: border-box;
 	display: inline-block;
 	height: 45px;
