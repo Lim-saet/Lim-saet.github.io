@@ -1,5 +1,25 @@
+#### 작업예정
+- 1달간(프론트엔드)은 주로 UI 계속진행(VS code개발환경) 하면서,
+- 피곤할때, 자바|스프링(이클립스-egov전자정부프레임워크개발환경) 기본언어실습진행.
+- 피곤할때, 오라클DB(SQL디벨러퍼개발환경) Ansi-SQL(표준SQL)기본언어실습진행CRUD.
+- 2달째부터(백엔드), 주로 스프링으로 실습이 진행(납품용-이력서포트폴리오용).
+- VS code에서 만든 UI를 이클립스에서 JSP로 변경 한 후 스프링웹프로젝트를 진행합니다.
+- 관리자단 AdminLTE적용- 스프링시간 (회원관리 CRUD-바로jsp, 게시판 생성관리 CRUD 바로 jsp)
+
+
+#### 20210528 금 작업예정
+- 관리자단 admin/board_write.html, board_view.html(댓글 Ajax처리)
+- 대시보드 home.html (최근 회원가입정보, 최근 게시물정보) 
+- 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root 파일까지)로 배치 
+- 스프링 작업의 시작
+
 #### 20210527 목 작업
-관리자단 AdminLTE적용(회원관리CRUD, 게시판CRUD, 대시보드)
+- admin/board_list.html 부터시작 
+- 관리자단 AdminLTE적용-지금: 게시판CRUD-html, 대시보드 - html
+- 관리자단 기본 틀(탬플릿): 공통 UI부분 작업 ㅇㅋ
+- ctrl+k+ctrl+0 | ctrl+k+0 = 코드축소 (코드구조확인필)
+- ctrl+k.ctrl+j | ctrl+k+j = 코드확대
+
 #### 20210526 수 작업
 - 검색엔진에 최적화: 의미있는 태그를 사용했는가 <header>,<section>,<footer>,<article>태그처럼 html5부터 만들어진 태그
 - 유효성 검사: validation 입력값이 제대로 된 값인지 확인하는 과정
