@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 스타일 CSS 임포트 -->
     <link rel="stylesheet" href="/assignment/css/style.css" type="text/css">
-    <!-- 텍스트 왜지 -->
+    <!-- 자바 스크립트 임포트-->
     <script src="script.js">
     // 왜 안될까
     </script>
     <title>계산기</title>
 </head>
+<!-- 계산기 폼 작성 -->
 <body>
-    <p id="output">0</p>
+    <div class="display">
+        <p id="output">0</p>
+    </div>
+    
     <div class="first-row">
         <button id="r1-1" onclick="forclear()" style="width: 138px;">C</button>
         <button id="r1-3" onclick="perc()">%</button>
-        <button id="r1-4">/</button>
+        <button id="r1-4" value="/" onclick="fordisplay('/')">/</button>
     </div>
     <div class="second-row">
         <button id="r2-1" value="7" onclick="fordisplay('7') ">7</button>
@@ -37,10 +42,11 @@
         <button id="r4-4" value="+" onclick="fordisplay('+') ">+</button>
     </div>
     <div class="fifth-row">
-        <button id="r5-1" style="width: 138px;"value="0" onclick="fordisplay('0') ">0</button>
+        <button id="r5-1" value="0" style="width: 138px;" value="0" onclick="fordisplay('0') ">0</button>
         <button id="r5-2" value="." onclick="fordisplay('.') ">.</button>
         <button id="r5-3" value="=" onclick="solve()" >=</button>
     </div>
     
 </body>
+<!-- // 계산기 폼 작성 -->
 </html>
