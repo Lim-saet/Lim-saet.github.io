@@ -6,7 +6,7 @@
     font-size: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* border-top-left-radiu: 왼쪽 둥근 모서리 속성 태그(상단왼쪽부터 시계방향으로 적용)*/
+    /* border-top-left-radius: 왼쪽 둥근 모서리 속성 태그(상단왼쪽부터 시계방향으로 적용)*/
 }
 button {
     padding: 10px;
