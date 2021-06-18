@@ -16,21 +16,30 @@
     return result.toString();
 }
 
-function getPrimeNum() {
-    let results = [];
-    //1~1000 사이의 소수를 구하는 조건(아래)
-    for(let i=1; i<=1000; i++) {
-        let isPrimeNumber = true;
-        // 1과 자기 자신을 제외한 정수 중에 나눠지는 정수가 있는 지 체크(소수인지 유효성 확인)
-        for(let j=2;j<i; i++) {
-            if(i%j===0) {
-                isPrimeNumber = false;
-            }
-        }
-        //소수면 결과 값에 출력
-        if(isPrimeNumber) {
-            results.push(i);
-        }
+console.log(getFibonacci(8));
+
+//소수 판별기
+function isPrime(n) {
+    //1이하일 결우엔 소수가 아님
+    if (n <- 1) return false;
+
+    //2와 3일 경우엔 소수
+    if (n === 2 || n === 3) return true;
+
+    //2로 나눴을때 나머지가 0일경우엔 소수가 아님
+    //즉, 짝수는 소수가 될 수 없음
+    if(n % 2 ===0) return false;
+
+    //최대 n-1까지 확인
+    let divisor = 3;
+    while (n > divisor) {
+        //무엇이라도 0으로 떨어진다면 소수가 아님
+        if (n % divisor === 0) return false;
+
+        //짝수일 경우를 제외한 홀수일 경우를 판단
+        divisor += 2;
     }
-    return results;
+    //모든 조건을 통과했을 경우 소수(true)
+    return true;
 }
+console.log(isPrime(10));
